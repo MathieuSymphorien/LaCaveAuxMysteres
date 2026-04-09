@@ -1,0 +1,84 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.home__content {
+    max-width: 500px;
+    width: 100%;
+}
+
+.home__title {
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    text-shadow: 0 0 30px var(--color-primary-glow);
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.05em;
+}
+
+.home__subtitle {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.home__input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.home__input {
+    flex: 1;
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background: var(--color-surface);
+    border: 1px solid var(--color-primary-glow);
+    border-radius: 6px;
+    color: var(--color-text);
+    outline: none;
+    transition:
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.home__input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 15px var(--color-primary-glow);
+}
+
+.home__input::placeholder {
+    color: var(--color-text-muted);
+}
+
+.home__button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 0.05em;
+}
+
+.home__button:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    box-shadow: 0 0 20px var(--color-primary-glow);
+}
+
+.home__error {
+    color: var(--color-danger);
+    font-size: 0.9rem;
+    font-style: italic;
+}
